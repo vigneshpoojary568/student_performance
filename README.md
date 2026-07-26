@@ -1,58 +1,150 @@
-# Student Performance Analysis System
+# 🎓 Student Performance Prediction
 
-A machine learning web application built with Python, Flask, and scikit-learn.
+A Machine Learning web application built with **Python** and **Flask** that predicts a student's academic performance based on various input features. The application provides an easy-to-use web interface for making predictions using a trained machine learning model.
 
-## Project Structure
+---
+
+## 📌 Project Overview
+
+This project uses a Machine Learning model to predict student performance from academic and personal factors. The model is integrated into a Flask web application, allowing users to enter student details and instantly receive a prediction.
+
+This project demonstrates practical knowledge of:
+- Machine Learning
+- Python Programming
+- Flask Web Development
+- Data Preprocessing
+- Model Deployment
+
+---
+
+## ✨ Features
+
+- 📊 Predict student performance using Machine Learning
+- 🌐 User-friendly Flask web interface
+- ⚡ Instant prediction results
+- 📁 Trained model stored using Pickle
+- 📈 CSV dataset for model training
+- 🎨 Responsive HTML interface
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- Flask
+- Scikit-learn
+- Pandas
+- NumPy
+- HTML5
+- CSS3
+- Pickle
+
+---
+
+## 📂 Project Structure
 
 ```
 student_performance/
-├── app.py                  # Flask web application
-├── model_training.py       # ML model training script
-├── dataset.csv             # Student dataset (40 records)
+│
+├── app.py
+├── model_training.py
+├── dataset.csv
+├── README.md
+│
 ├── model/
-│   ├── student_model.pkl   # Trained Random Forest model
-│   └── label_encoder.pkl   # Label encoder
+│   ├── student_model.pkl
+│   └── label_encoder.pkl
+│
 ├── templates/
-│   └── index.html          # Frontend UI
+│   └── index.html
+│
 ├── static/
-│   ├── css/
-│   ├── js/
-│   └── graphs/
-└── README.md
+│
+└── requirements.txt
 ```
 
-## Setup & Run
+---
 
-### 1. Install dependencies
+## 🚀 Installation
+
+### Clone the Repository
+
 ```bash
-pip install flask scikit-learn matplotlib pandas numpy
+git clone https://github.com/vigneshpoojary568/student_performance.git
 ```
 
-### 2. Train the model
+### Move into the project folder
+
 ```bash
-python model_training.py
+cd student_performance
 ```
 
-### 3. Run the Flask app
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the application
+
 ```bash
 python app.py
 ```
 
-### 4. Open browser
-Visit: http://localhost:5000
+Open your browser and visit:
 
-## Features
-- Search student by Registration Number
-- Display G1–G7 marks with grade badges
-- Bar chart visualization (Matplotlib)
-- ML-powered performance prediction (Good / Average / Poor)
-- Pass/Fail classification
-- Validation for unknown registration numbers
+```
+http://127.0.0.1:5000
+```
 
-## ML Model
-- Algorithm: Random Forest Classifier (100 trees)
-- Accuracy: ~87.5%
-- Classes: Good (≥75%), Average (60–74%), Poor (<60%)
+---
 
-## Sample Registration Numbers
-- U05CG22A0001, U05CG22A0015, U05CG22A0017, U05CG22A0030, U05SK22A0051
+## 📸 Application Screenshot
+
+> Add screenshots here after running the project.
+
+Example:
+
+```
+screenshots/home.png
+```
+
+---
+
+## 🧠 Machine Learning Workflow
+
+1. Load Dataset
+2. Data Preprocessing
+3. Feature Encoding
+4. Train Machine Learning Model
+5. Save Model (.pkl)
+6. Load Model in Flask
+7. Predict Student Performance
+
+---
+
+## 📈 Future Improvements
+
+- User Authentication
+- Prediction History
+- Performance Graphs
+- Database Integration
+- Model Accuracy Comparison
+- Cloud Deployment
+
+---
+
+## 👨‍💻 Author
+
+**Vignesh Poojary**
+
+Bachelor of Computer Applications (BCA)
+
+GitHub:
+https://github.com/vigneshpoojary568
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
